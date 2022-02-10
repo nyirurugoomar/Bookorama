@@ -134,6 +134,17 @@ h2 {
   cursor: pointer;
   margin-right: 10px;
 }
+#tabbed-contect .panel{
+  display: none;
+  border: 1px solid #ddd;
+  padding: 0 10px;
+  border-radius: 4px;
+}
+
+#tabbed-content .panel.active{
+  display: block;
+}
+
 #tabbed-content .tab {
   display: none;
   border: 1px solid #ddd;

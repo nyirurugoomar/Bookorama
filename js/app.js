@@ -12,6 +12,7 @@ list.addEventListener('click',function(e){
 
 const addForm = document.forms['add-book'];
 addForm.addEventListener('submit', function(e){
+
   e.preventDefault();
   const value =addForm.querySelector('input[type="text"]').value;
 
@@ -36,7 +37,7 @@ li.appendChild(deleteBtn);
 list.appendChild(li);
 
 
-//filter books
+//filter books search
 
 const searchBar = document.forms['search-books'].querySelector('input');
 
@@ -58,6 +59,24 @@ searchBar.addEventListener('keyup', function(e){
 
 })
 
+//tabbed content
+const tabs = document.querySelector('tabs');
+const panels = document.querySelectorAll('panel');
+
+tabs.addEventListener('click',function(e){
+  
+  if(e.target.tagName == "LI"){
+
+    const targetPanel = document.querySelector(e.target.dataset.target);
+     panels.forEach(function(panel){
+       if(panel == targetPanel){
+         panel.classList.add('active');
+       }else{
+         panel.classList.remove('active');
+       }
+     })
+  }
+})
 
 
-}) 
+
