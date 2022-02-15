@@ -4,22 +4,28 @@
     <meta charset="utf-8">
     <link href="styles.css" rel="stylesheet" />
     <title>JavaScript DOM Tutorials</title>
+	<script src="./js/app.js"></script>
   </head>
   <body>
   	<div id="wrapper">
 	    <header>
 	    	<div id="page-banner">
 	    		<h1 class="title">Todo LIST</h1>
-          <p>List your todo list</p>
+        
+			<p>List your todo list</p>
+			
           <form id="search-books">
-            <input type="text" placeholder="Search books..." />
+            <input type="text" placeholder="Search todo..." />
           </form>
 	    	</div>
 	    </header>
 	    <div id="book-list">
-	    	<h2 class="title">Books to Read</h2>
+			<center>
+				<h2 class="title">LIST YOUR TODO </h2>
+			</center>
+	    	
 	    	<ul>
-	    		<li>
+	    		<!-- <li>
 	    			<span class="name">Name of the Wind</span>
 	    			<span class="delete">delete</span>
 	    		</li>
@@ -34,14 +40,15 @@
 	    		<li>
 	    			<span class="name">The Master and the Margarita</span>
 	    			<span class="delete">delete</span>
-	    		</li>
+	    		</li> -->
 	    	</ul>
 	    </div>
 	    <form id="add-book">
 
 			<!-- <input type="checkbox" id="hide"/>
 			<label for="hide">Hide all books</label> -->
-	    	<input type="text" placeholder="Add a book..."/>
+	    	<input type="text" placeholder="Add todo..."/>
+			
 	    	<button>Add</button>
 	    </form>
 
@@ -61,6 +68,6 @@
 		</div> -->
     </div>
 	
-    <script src="./js/app.js"></script>
+    
   </body>
 </html>
